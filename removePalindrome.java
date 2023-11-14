@@ -22,12 +22,11 @@ public class removePalindrome {
         int j = str.length()-1;
         while (i<j) {
             if(str.charAt(i)==str.charAt(j)){
-                continue;
+                i++;
+                j--;
             }else{
                 return false;
-            }  
-            i++;
-            j--;      
+            }                  
         }
         return true;
     }
